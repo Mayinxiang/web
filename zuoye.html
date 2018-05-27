@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>zuoye </title>
+	<style>
+		*{
+            padding:0;
+            margin:0;
+        }
+        ul,li,ol{
+        	list-style: none;
+        }
+        a{
+        	text-decoration: none;
+
+        }
+
+        .clear:after {
+            content: '';
+            display: block;
+            height: 0;
+            clear: both;
+        }
+        .a1{
+        	 height: 173px;
+        	 background-color: #eeeeef;
+        }
+        .logo{
+        	text-align: center;
+        	height: 95px;
+        	padding-top: 30px 
+        }
+        .a2{
+        	width: 670px;
+        	height: 45px;
+        	background-color: white;
+        	margin: 0 auto;
+        	border-radius: 22px;
+        	font-size: 14px;
+        	font-family: "微软雅黑";
+        }
+        .a2 li:last-child{
+        	background: none;
+        }
+        .a2 li{
+        	float: left;
+        	height:45px ;
+        	padding: 0 30px;
+        	line-height: 45px;
+        	background: url('images/line.png') no-repeat right center;
+        }
+        .a2 li a{
+        	display: block;
+        	height: 42px;
+        }
+        .a2 li a:hover{
+        	border-bottom: 3px solid #1e50ae;
+        	color:#1e50ae;
+        }
+        .b1{
+        	height: 405px;
+        	background: url('images/b1.png') no-repeat center center;
+        }
+        .b2{
+        	width: 682px;
+        	height: 232px;        	
+        }
+        .b2 img{
+        	margin: 0 auto;
+        }
+        .c1{
+        	height: 809px;
+        	background: #ffffff;
+        	margin: 0 auto;
+        }
+        .c2{
+        	display: block;
+        	margin-top: 60px;
+        	margin-bottom: 24px;
+        	text-align: center;
+        }
+        .c2 p{
+        	font-size: 34px;
+        	font-family: 微软雅黑;
+        	text-align: center;
+        	text-decoration-color: #333333;
+        }
+        .c3{
+        	text-align: center;
+        	display: block;
+        	margin-bottom: 60px;
+
+        }
+        .c3 p{
+        	font-size: 31.45px;
+        	font-family:Aparajita;
+        	text-align: center;
+        	text-decoration-color: #333333;
+        }
+        .c4{
+        	width: 310px;
+        	height: 415px;
+        	float: left;
+        	
+        }
+        .c4 p{
+        	font-size: 16px;
+	        text-align: center;
+	        font-family: 微软雅黑;
+	        margin-top: 22px;
+	        margin-bottom: 16px;
+        }
+        .c4 img{
+        	margin-left: 80px;
+        	margin-right: 80px;
+        }
+
+        .c4 ul li{
+        	margin-bottom: 15px;
+        	background: url('images/yuandian.png') no-repeat left center;
+        	font-size: 14px;
+	        color: #c1c1c1;
+	        margin-left: 120px;
+	        padding-left:15px; 
+
+        }
+        .c5{
+        	width: 1250px;
+        	height: 675px;
+        	margin: 0 auto;
+        }
+        .c6{
+        	width: 310px;
+        	height: 245px;
+        	float: left;
+        }
+        .c6 img{
+        	margin-left: 80px;
+        	margin-right: 80px;
+        }
+        .c6 p{
+        	font-size: 16px;
+	        text-align: center;
+	        font-family: 微软雅黑;
+	        margin-top: 22px;
+	        margin-bottom: 16px;
+        }
+        .d1{
+        	height: 712px;
+        	width: 1560px;
+        	background: url('images/b2.png') no-repeat center center;
+        	margin: 0 auto;
+        }    
+        .d2{
+        	padding-top: 65px;
+        	padding-bottom: 23px;
+        	font-size: 34px;
+        	font-family: 微软雅黑;
+        	text-align: center;
+        	color: white;
+        } 
+        .d3{
+        	padding-bottom: 75px;
+        	font-size: 31.45px;
+        	font-family: Aparajita;
+        	text-align: center;
+        	color: white;
+        }
+        .d4{
+        	float: left;
+        	width: 230px;
+        	height: 300px;
+        	margin-right: 26px;
+        	margin-left: 26px;
+        } 
+        .d5 button{
+        	float: left;
+        	margin-top: 80px;
+        	margin-left: 663px;
+        	margin-left: 663px;
+        	width: 236px;
+        	height: 54px;
+        	border-radius: 50px;
+        	border-style: solid;
+        	border-color: white;
+        	border-width: 2px;
+        	font-size: 20px;text-align: center;line-height: 54px;color: white;
+        	background-color: transparent;
+
+        } 
+        .e1{
+        	height: 908px;
+        	width: 1560px;
+        	background-color:white;
+        	margin: 0 auto;
+        }
+        .e2{
+        	width: 515px;
+        	height: 277px;
+        	float: left;
+        	margin-bottom: 96px;
+
+        }
+        .e2 p{
+        	padding-bottom: 18px;
+        	color: #969696;
+        	padding-left: 5px;
+        	font-family: 微软雅黑;
+        	font-size: 14px;
+
+        }
+        .e3{
+        	width: 503px;
+        	height: 258px;
+        	float: left;
+        }
+        .e3 p{
+        	font-size: 14px;
+        	font-family:微软雅黑;
+        	padding-bottom: 18px;
+        	padding-top: 15px;
+        	border-bottom:1px dashed #848484; 
+        	color: #848484;
+        }
+        .f1{
+        	height: 102px;
+        	width: 1560px;
+        	margin: 0 auto;
+        	background-color: #f5f5f5;
+        }
+        .f2{
+        	width: 300px;
+        	height: 47px;
+        	margin-top: 29px;
+        	margin-bottom: 27px;
+        	border-right: solid 1px #e0e0e0;
+        	float: left;
+        }
+        .f2 img{
+        	padding-left: 46px;
+        	padding-right: 22px;
+        	float: left;
+        }
+        .f3{
+        	padding-top: 0px;
+        	padding-bottom: 8px;
+        	color: #333333;
+        	font-size: 19px;
+        	float: left;
+        	font-family: 微软雅黑;
+        }
+        .f4{
+        	color: #333333;
+        	font-size: 13px;
+        	float: left;
+        	font-family: 微软雅黑;
+        }
+        .g1{
+        	height: 408px;
+        	width: 1560px;
+        	background-color:#323232;
+        	margin: 0 auto;
+        }
+        .g2{
+        	width: 74px;
+        	height: 138px;
+        	margin-top: 75px;
+        	margin-bottom: 35px;
+        	float: left;
+        	color: #ffffff;
+        	margin-left: 51px;
+        	margin-right: 51px;
+        }
+        .g2 span{
+        	font-family: 微软雅黑;
+        	font-size: 18px;
+        	padding-bottom: 7px;
+        }
+        .g2 p{
+        	font-size: 14px;
+        	font-family:微软雅黑;
+        	padding-top: 22px;
+        }
+        .g3{
+        	width: 18px;
+        	height: 125px;
+        	float: left;
+        	margin-bottom: 9px;
+        	margin-top: 84px;
+        	margin-right: 40px;
+        	margin-left: 35px;
+        }
+        .g3 p{
+        	padding-bottom: 3px;
+        	font-size: 18px;
+        	font-family: 微软雅黑;
+        	color: #f5f5f5;
+        }
+        .g4{
+        	width: 220px;
+        	height: 120px;
+        	margin-top: 90px;
+        	margin-bottom: 53px;
+        	float: left;
+        }
+        .g4 span{
+        	font-family: 微软雅黑;
+        	font-size: 18px;
+        	color: #f5f5f5;
+
+        }
+        .g4 p{
+        	font-family: 微软雅黑;
+        	font-size: 16px;
+        	padding-top: 24px;
+        	color: #f5f5f5;
+        	padding-left:  40px;
+        }
+        .h1{
+        	height: 17px;
+        	margin-top: 48px;
+        	margin-bottom: 24px;
+        	margin-left: 415px;
+        }
+        .h1 ul li{
+        	padding-right: 13px;
+        	border-right: solid 1px #a6a6a6;
+        	float: left;
+        	font-size: 14px;
+        	font-family: 微软雅黑;
+        	color: #f5f5f5;
+        	padding-left: 13px;
+        }
+        .h2{
+        	margin-left: 643px;
+        	height: 13px;
+        	width: 274px;
+        	font-family: 微软雅黑;
+        	font-size: 14px;
+        	color: #f5f5f5;
+        }
+	</style>
+</head>
+<body>
+	<div class="a1">
+		<div class="logo">
+			<img src="images/logo.png" > 
+		</div>
+		<ul class="a2">
+			<li>
+				<a class="first" href="#">首页</a>
+			</li>
+			<li>
+				<a href="#">关于我们</a>
+			</li>
+			<li>
+				<a href="#">中智服务</a>
+			</li>
+			<li>
+				<a href="#">解决方案</a>
+			</li>
+			<li>
+				<a href="#">最新资讯</a>
+			</li>
+			<li>
+				<a href="#">联系我们</a>
+			</li>
+		</ul>
+	</div>
+	<div class="b1">
+	</div>
+	<div class="c1">
+		<div class="c2"><p>服务项目</p></div>
+		<div class="c3"><p>SERVICE ITEMS</p></div>
+		<div class="c5">
+			<div class="c4">
+				<img src="images/c0.png" alt="">
+				<p>工商代理</p>
+				<ul class="clear">
+					<li>公司注册</li>
+					<li>公司注册地址</li>
+					<li>分公司注册</li>
+					<li>外资注册</li>
+					<li>股权变更</li>
+					<li>公司注销</li>
+				</ul>
+			</div>
+			<div class="c4">
+				<img src="images/c1.png" alt="">
+				<p>财务代理</p>
+				<ul class="clear">
+					<li>代理记账</li>
+					<li>税务筹划</li>
+					<li>审计服务</li>
+				</ul>
+			</div>
+			<div class="c4">
+				<img src="images/c2.png" alt="">
+				<p>资质服务</p>
+				<ul class="clear">
+					<li>各类许可证</li>
+					<li>资质宣批</li>
+					<li>高薪企业</li>
+					<li>商标专利</li>
+				</ul>
+			</div>
+			<div class="c4">
+				<img src="images/c3.png" alt="">
+				<p>特色服务</p>
+				<ul>
+					<li>&nbsp;</li>
+				</ul>
+			</div>
+			<div class="c6">
+				<img src="images/c4.png" alt="">
+				<p>公积金社保代理</p>
+			</div>
+			<div class="c6">
+				<img src="images/c5.png" alt="">
+				<p>办公室租赁</p>
+			</div>
+			<div class="c6">
+				<img src="images/c6.png" alt="">
+				<p>营业执照转让</p>
+			</div>
+			<div class="c6">
+				<img src="images/c7.png" alt="">
+				<p>法律服务</p>
+			</div>
+			
+		</div>
+
+	</div>
+	<div class="d1">
+		<div><h4 class="d2">解决方案</h4></div>
+		<div class="d3">SOLUTION</div>
+		<div style="height: 36px;width: 26px;margin:131px 11px 131px 180px;float: left"><img src="images/d12.png" alt=""></div>
+		<div class="d4" ><img src="images/d1.png" ></div>
+		<div class="d4"><img src="images/d2.png" alt=""></div>
+		<div class="d4"><img src="images/d3.png" alt=""></div>
+		<div class="d4"><img src="images/d4.png" alt=""></div>
+		<div style="height: 36px;width: 26px;margin:131px 160px 131px 11px;float: left"><img src="images/d11.png" alt=""></div>
+		<div class="d5"><button>了解更多>></button></div>
+		
+	</div>
+	<div class="e1">
+		<div style="font-size: 34px;font-family: 微软雅黑;text-align: center;padding-top:58px;padding-bottom: 22px; "><h4>最新资讯</h4></div>
+		<div style="font-size: 31.45px;font-family: Aparajita;text-align: center;padding-bottom: 48px; ">LATEST INFORMATION</div>
+		<div class="e2" style="margin-left: 235px;margin-right: 74px;"><img src="images/e1.png" alt=""></div>
+		<div class="e2">
+			<div style="font-size: 22px;padding-top: 20px;padding-bottom: 20px;font-family: 微软雅黑;">交易明智&方便</div>
+			<div style="font-size: 18px;padding-bottom: 38px;font-family: 微软雅黑;">TRANSACTION WISE & CONVENIENT</div>
+			<div class="clear"><p>要适应快速发展的差价合约市场，客户需要一个能让他们不用经纪商的介入就能分</p></div>
+			<div class="clear"><p>析实时报价，进行实时交易以及应用投资策略的平台。他们需要一个简单便捷的界</p></div>
+			<div class="clear"><p>面来管理他们的账户，并能轻松查看图标和报告。</p></div>
+			<button style="width: 140px;height: 40px;margin-top: 16px;border:#355eb1 solid 1px;border-radius: 15px;font-size: 16px;color: #355eb1;line-height: 40px;text-align: center;background-color: transparent;">了解详情</button>
+		</div>	
+		<div class="e3" style="padding-left: 250px;padding-right: 48px;">
+			<div class="clear">
+				<p style="padding-top: 0;">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</p>
+			    <p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</p>
+			    <p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</p>
+			    <p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</p>
+			    <p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</p>
+			    <p style="border-bottom: none;">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</p>
+			</div>
+		</div>	
+		<div class="e3" style="padding-right: 250px;">
+			<p style="padding-top: 0">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</p>
+			<p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</p>
+			<p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</p>
+			<p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</p>
+			<p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</p>
+			<p style="border-bottom: none;">为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上…</p>
+		</div>			
+	</div>
+	<div class="f1">
+		<div class="f2" style="margin-left: 180px;">
+			<img src="images/f1.png" alt="">
+			<p class="f3">资质认证</p>
+			<p class="f4">服务商100%实名认证</p>
+		</div>
+		<div class="f2">
+			<img src="images/f2.png" alt="">
+			<p class="f3">支付安全</p>
+			<p class="f4">明码标价支付及信息安全</p>
+		</div>
+		<div class="f2">
+			<img src="images/f3.png" alt="" style="padding-left: 70px;">
+			<p class="f3">保险赔付</p>
+			<p class="f4">为您提供担保赔付</p>
+		</div>
+		<div class="f2" style="border-right: none;">
+			<img src="images/f4.png" alt="">
+			<p class="f3">售后无忧</p>
+			<p class="f4">服务出问题经理全程跟进</p>
+		</div>
+	</div>
+	<div class="g1">
+		<div class="g2" style="margin-left: 185px;">
+			<span>中智信元</span>
+			<p>加入我们</p>
+			<p>联系我们</p>
+			<p>最新动态</p>
+		</div>
+		<div class="g2">
+			<span>订单服务</span>
+			<p>支付方式</p>
+			<p>退款说明</p>
+			<p>购买流程</p>
+		</div>
+		<div class="g2">
+			<span>售后服务</span>
+			<p>在线问答</p>
+			<p>服务中心</p>
+			<p>售后政策</p>
+		</div>
+		<div class="g2">
+			<span>常见问题</span>
+			<p>新手帮助</p>
+			<p>支付帮助</p>
+			<p>开具发票</p>
+		</div>
+		<div style="height: 148px;width: 148px;margin-right: 12px;margin-top: 76px;margin-bottom: 34px;margin-left: 54px;float: left;"><img src="images/g1.png" alt=""></div>
+		<div class="g3">
+			<p>微</p>
+			<p>信</p>
+			<p>扫</p>
+			<p>一</p>
+			<p style="padding-bottom: 0px;">扫</p>
+		</div>
+		<div style="width: 1px;height: 139px;float: left;margin-top: 85px;margin-bottom: 35px;margin-right: 50px;">
+			<img src="images/g4.png" alt="">
+		</div>
+		<div class="g4">
+			<span>咨询热线：400-000-0000</span>
+			<p style="background: url('images/g2.png') no-repeat left bottom;">1234567888@qq.com</p>
+			<p style="background: url('images/g3.png') no-repeat left bottom;">某某企业网站官方微信</p>
+		</div>
+		<img src="images/g5.png" alt="">
+		<div class="h1">
+			<ul>
+				<li>首页</li>
+				<li>工商代理</li>
+				<li>财务记账</li>
+				<li>股权交易与变更</li>
+				<li>企业贷款</li>
+				<li>办公室租赁</li>
+				<li>社保公积金代理</li>
+				<li style="border-right: none;">法律服务</li>
+			</ul>
+		</div>
+		<div class="h2">© 2017-2018 中智信元有限公司 版权所有</div>
+	</div>
+
+
+</body>
+</html>
